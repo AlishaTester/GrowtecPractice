@@ -1,0 +1,19 @@
+package ArrayProgram;
+
+import java.util.Arrays;
+
+public class CopyArrayINReverse {
+	public static void main(String[] args) {
+		int array1[]=new int[4];
+	    array1[0]=100;
+	    array1[1]=120;
+	    array1[2]=500;
+	    array1[3]=540;
+	    int array2[]=new int[array1.length];
+	    for (int i=0,j=array1.length-1;i<array1.length;i++,j--) {
+	    	array2[j]=array1[i];
+	    }
+	    System.out.println(Arrays.toString(array2));
+	    System.out.println(Arrays.toString(array1));
+	}
+}
